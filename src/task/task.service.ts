@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { DeleteResult, Repository, UpdateResult } from 'typeorm';
+import { DeleteResult, Repository } from 'typeorm';
 import { createTask, updateTask } from './task.dto';
 import { TaskEntity } from './task.entity';
 
@@ -43,15 +43,15 @@ export class TaskService {
      * @param taskUpdate 
      * @returns
      */
-    update(id: number, taskUpdate: updateTask): Promise<UpdateResult> {
-        return this.taskRepository.update(id, taskUpdate)
+    update(taskUpdate: updateTask): Promise<any> {
+        return this.taskRepository.save(taskUpdate)
     }
 
     /**
      * Service for remove task
      * @param id, type: number
      */
-    async remove(id: number): Promise<DeleteResult> {
+    async remove(id: number): Promise<any> {
         return await this.taskRepository.delete(id)
     }
 }

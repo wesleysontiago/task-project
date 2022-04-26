@@ -11,6 +11,9 @@ export class TaskEntity {
     @Column()
     description: string
 
+    @Column()
+    commentary: string
+
     @CreateDateColumn()
     createdAt: Date
 

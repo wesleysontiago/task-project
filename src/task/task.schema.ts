@@ -16,6 +16,9 @@ export const TaskSchema = new EntitySchema<TaskEntity>({
         description: {
             type: String,
         },
+        commentary: {
+            type: String,
+        },
         createdAt: {
             type: Date,
         },
