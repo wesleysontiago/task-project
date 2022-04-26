@@ -9,10 +9,22 @@ export class TaskEntity {
     name: string
 
     @Column()
+    assignedTo: string
+
+    @Column()
     description: string
 
     @Column()
     commentary: string
+
+    @Column()
+    state: string
+
+    @Column()
+    severity: string
+
+    @Column()
+    area: string
 
     @CreateDateColumn()
     createdAt: Date
