@@ -26,7 +26,7 @@ $ npm run start:prod
 Após rodar o comando acima, acesse:
 
 ```bash
-$ [Localhost Swagger](http://localhost:3000/api)
+$ http://localhost:3000/api
 ```
 
 ## Desenvolvedor
