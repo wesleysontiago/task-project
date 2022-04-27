@@ -21,9 +21,16 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Docmentação da API com Swagger
+
+Após rodar o comando acima, acesse:
+
+```bash
+$ [Localhost Swagger](http://localhost:3000/api/#/)
+
 ## Desenvolvedor
 
-- Author - [Wesleyson Tiago](https://www.instagram.com/wesleysontiago/)
+- Autor - [Wesleyson Tiago](https://www.instagram.com/wesleysontiago/)
 - LinkedIn - [@wesleysontiago](https://www.linkedin.com/in/wesleyson-tiago-43a06b17b/)
 
 ## License
