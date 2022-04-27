@@ -29,6 +29,11 @@ Após rodar o comando acima, acesse:
 $ http://localhost:3000/api
 ```
 
+## Database
+
+Foi utilizado SQLite para o projeto.
+No VSCode existe uma extensão para ver o banco, segue link: [Extensão](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)
+
 ## Desenvolvedor
 
 - Autor - [Wesleyson Tiago](https://www.instagram.com/wesleysontiago/)
