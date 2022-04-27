@@ -31,5 +31,6 @@ export class updateTask {
     severity: string
     @ApiProperty({ type: 'string' })
     area: string
+    createdAt: Date
     updatedAt: Date
 }

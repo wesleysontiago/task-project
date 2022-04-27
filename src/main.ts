@@ -8,7 +8,6 @@ async function bootstrap() {
     .setTitle('Task Project example')
     .setDescription('The task project API description')
     .setVersion('1.0')
-    .addTag('Task Project')
     .build();
 
   const customOptions: SwaggerCustomOptions = {

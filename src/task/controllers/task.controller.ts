@@ -42,6 +42,7 @@ export class TaskController {
         if (getTask) {
             task.id = getTask.id
             task.updatedAt = new Date()
+            task.createdAt = getTask.createdAt
             const upTask = await this.taskService.update(task)
             return res.status(HttpStatus.OK).json(upTask)
         } else {

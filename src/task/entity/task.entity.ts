@@ -42,5 +42,5 @@ export class TaskEntity {
 
     @ApiProperty({ example: '2022-04-27T03:20:50.000Z', description: 'Task updated in' })
     @UpdateDateColumn()
-    updtedAt: Date
+    updatedAt: Date
 }
