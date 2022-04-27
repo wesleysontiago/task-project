@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common'
 import { AppController } from './app.controller'
-import { TaskController } from './task/task.controller'
+import { TaskController } from './task/controllers/task.controller'
 import { AppService } from './app.service'
-import { TaskService } from './task/task.service'
+import { TaskService } from './task/service/task.service'
 import { TaskModule } from './task/task.module'
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { TaskEntity } from './task/task.entity'
+import { TaskEntity } from './task/entity/task.entity'
 
 @Module({
   imports: [
@@ -13,7 +13,7 @@ import { TaskEntity } from './task/task.entity'
     TypeOrmModule.forFeature([TaskEntity]),
     TypeOrmModule.forRoot({
       type :"sqlite",
-      database: "task_project.sqlite",
+      database: "tasks.sqlite",
       entities: [__dirname + "/**/*.entity{.ts,.js}"],
       synchronize: true
     }),

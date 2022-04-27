@@ -1,4 +1,5 @@
-import { Entity, OneToOne, JoinColumn,Column, CreateDateColumn, UpdateDateColumn, PrimaryGeneratedColumn, OneToMany } from 'typeorm'
+import { Entity, Column, CreateDateColumn, UpdateDateColumn, PrimaryGeneratedColumn, OneToMany } from 'typeorm'
+import { CommentaryEntity } from './commentary.entity'
 
 @Entity()
 export class TaskEntity {
@@ -6,7 +7,7 @@ export class TaskEntity {
     id: number
 
     @Column()
-    name: string
+    title: string
 
     @Column()
     assignedTo: string
@@ -14,8 +15,8 @@ export class TaskEntity {
     @Column()
     description: string
 
-    @Column()
-    commentary: string
+    @OneToMany(() => CommentaryEntity, (commentary: CommentaryEntity) => commentary.task)
+    commentary: CommentaryEntity[]
 
     @Column()
     state: string

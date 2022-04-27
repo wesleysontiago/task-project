@@ -1,8 +1,8 @@
 import { Body, Controller, Delete, Get, HttpStatus, Param, Post, Put, Res } from '@nestjs/common'
 import { Request, Response } from 'express'
-import { createTask, updateTask } from './task.dto'
-import { TaskEntity } from './task.entity'
-import { TaskService } from './task.service'
+import { createTask, updateTask } from '../.dto'
+import { TaskEntity } from '../entity/task.entity'
+import { TaskService } from '../service/task.service'
 
 @Controller('task')
 export class TaskController {
